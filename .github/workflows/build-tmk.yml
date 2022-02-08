@@ -1,12 +1,14 @@
-# Copyright 2021 Manna Harbour
-# https://github.com/manna-harbour/miryoku
-
-name: 'Build Tmk'
+name: 'Build tmk'
 on:
   - workflow_dispatch
 jobs:
-  build:
-    if: github.repository_owner == 'manna-harbour'
+  test:
     uses: manna-harbour/miryoku_kmonad/.github/workflows/main.yml@main
     with:
-      mode: '["build"]'
+      mode: '["build"]'      
+      alphas: '["colemakdhk","qwerty"]'
+      nav: '["default"]'
+      clipboard: '["win"]'
+      layers: '["default"]'
+      mapping: '["default"]'
+      kmonad_os: '["win"]'
