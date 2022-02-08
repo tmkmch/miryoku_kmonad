@@ -10,9 +10,3 @@ jobs:
     uses: manna-harbour/miryoku_kmonad/.github/workflows/main.yml@main
     with:
       mode: '["build"]'
-      alphas: '["qwerty"]'
-      nav: '["default"]'
-      clipboard: '["win"]'
-      layers: '["default"]'
-      mapping: '["default"]'
-      kmonad_os: '["win"]'
